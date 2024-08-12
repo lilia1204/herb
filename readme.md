@@ -42,7 +42,7 @@
 
 ## 1. 功能模块图
 
-![功能模块图](.\readmeImg\funcModules.png)
+![功能模块图](./readmeImg/funcModules.png)
 
 
 
