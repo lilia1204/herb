@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<!-- 设置背景图片 -->
+<image class="bg" src="../../image/bg.jpg" mode="aspectFill"/>
+
+<!-- 系统名称 -->
+<view class="title">神农识百草</view>
+
+
+<!-- 三个选项 -->
+<view class="box box_margin_top" bind:tap="to_message">
+  <image class="img" src="../../image/message.png" mode="aspectFit"/>
+  <view class="txt">中草药信息</view>
+</view>
+
+<view class="box" bind:tap="to_identify">
+  <image class="img" src="../../image/identify.png" mode="aspectFit"/>
+  <view class="txt">中草药识别</view>
+</view>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台系统</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>首页</h1>
+            <div id="user-info" class="user-info"></div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-icon bg-warning">
+                    <img src="./../resource/user-icon.png" alt="用户总数">
+                </div>
+                <div class="stat-info">
+                    <h2 id="userNum"></h2>
+                    <p>用户总数</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon bg-danger">
+                    <img src="./../resource/history-icon.png" alt="历史识别总数">
+                </div>
+                <div class="stat-info">
+                    <h2 id="hisNum"></h2>
+                    <p>历史识别总数</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon bg-success">
+                    <img src="./../resource/today-icon.png" alt="今日识别总数">
+                </div>
+                <div class="stat-info">
+                    <h2 id="todayNum"></h2>
+                    <p>今日识别总数</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-item">
+                <h3>近五日搜索使用情况</h3>
+                <canvas class="chat-item2" id="lineChart"></canvas>
+            </div>
+            <div class="chart-item">
+                <h3>搜索记录统计饼状图</h3>
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    background: url('./../resource/bg.jpg') no-repeat center center fixed; /* 背景图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个页面 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(235, 221, 198, 0.7); /* 半透明白色背景 */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    margin-bottom: 1.5rem;
+}

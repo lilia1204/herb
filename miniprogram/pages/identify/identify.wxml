@@ -1,0 +1,18 @@
+<image class="img" src="{{imageUrl}}" mode="aspectFit"/>
+
+<view class="btnBox">
+  <button id="btn" bind:tap="chooseImg" class="bg_color_1">选择图片</button>
+  <button id="btn" bind:tap="identify" class="bg_color_2">开始识别</button>
+</view>
+
+<view wx:if="{{flag}}" class="title">草药介绍</view>
+
+<view wx:if="{{flag}}" class="detail">
+  <view class="name">
+    <text class="font_weight">草药名：</text><text>{{infor.name}}</text>
+  </view>
+  <view class="use">
+    <text class="font_weight" decode="{{true}}">用&emsp;处：</text>
+    <view><text>{{infor.intro}}</text></view>
+  </view>
+</view>

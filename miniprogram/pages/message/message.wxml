@@ -1,0 +1,28 @@
+<image class="bg"  src="./../../image/mess_bg.jpg" mode="aspectFill"/>
+<view class="searchBox">
+  <view class="empty"></view>
+  <input placeholder="请输入中草药名" maxlength="50" bindinput="nameInput" class="searchText" type="text"/>
+  <button id="searchIcon" bind:tap="search">搜索</button>
+</view>
+
+<swiper current="{{CurIdx}}" indicator-dots="true" circular="true" class="swiper" previous-margin="70rpx"  next-margin="70rpx" bindchange="CurSel">
+  <swiper-item wx:for="{{list}}" class="swiperItem" wx:key="index">
+   
+    <view class="card {{CurIdx==index?'big':''}}">
+    
+      <view class="front {{CurIdx==index?(flag==true?'':'c1'):''}}" bindtap="{{false?'':'rotateFn'}}">
+        <image class="img" src='{{item.image}}' mode="aspectFill"/>
+      </view>
+      
+      <view class="back {{CurIdx==index&&flag==false?'c2':''}}" bindtap="rotateFn">
+      <image class="bg2" src="./../../image/text_bg.jpg" mode="aspectFill"/>
+        <scroll-view 	scroll-y="true"    class="scroll">
+          <view wx:if="{{CurIdx==index&&flag==false}}" view class="s1">{{item.name}}</view>
+          <view wx:if="{{CurIdx==index&&flag==false}}" class="s2"><text>{{item.introduction}}</text></view>
+        </scroll-view>
+      </view>
+    </view>
+    <view wx:if="{{CurIdx==index}}" class="name">{{item.name}}</view>
+   
+  </swiper-item>
+</swiper>

@@ -1,0 +1,47 @@
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  
+  background-color: #fff;
+}
+ 
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+ 
+.container {
+  display: flex;
+}
+.row{
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   display: flex;
+   align-items: center;
+   height: 80rpx;
+   padding-left: 20rpx;
+}
+.text1{
+    flex: 2;
+}
+.weui-input{
+    flex: 6;
+}
+
+.tip{
+  font-size: 25rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-bottom: 30px;
+}
+/* .tip2{
+  font-size: 25rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rpx;
+  margin-bottom: 30px;
+} */
